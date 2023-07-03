@@ -1,0 +1,17 @@
+.header {
+  box-shadow: 0 0 4px 3px rgba(0 0 0 / 20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  background: white;
+}
+
+.logo {
+  max-width: 100%;
+  width: 125px;
+}
+.logo img {
+  max-width: 100%;
+}

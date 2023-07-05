@@ -108,8 +108,7 @@ a:not(.btn):not(.button)::after {
   transition: width 0.3s;
 }
 a:not(.btn):not(.button):hover::after {
-  /* background-color: #35e3f0; */
-  background-color: #dbd035;
+  background-color: #fcba03;
   width: 100%;
 }
 

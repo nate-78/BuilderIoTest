@@ -16,6 +16,9 @@ export default function Header(props: any) {
               <Link href="/">Home</Link>
             </li>
             <li>
+              <Link href="/artists">Artists</Link>
+            </li>
+            <li>
               <Link href="/example">Example</Link>
             </li>
           </ul>

@@ -3,6 +3,7 @@
 import { builder } from "@builder.io/sdk";
 import Head from "next/head";
 import { RenderBuilderContent } from "../../components/builder";
+import PageTitle from "@/components/pageTitle/pageTitle";
 
 // Replace with your Public API Key
 builder.init('aec0025c19714040a9b33f7105687769');
@@ -37,6 +38,7 @@ export default async function Page(props: PageProps) {
         <title>{content?.data.title}</title>
       </Head>
       {/* Render the Builder page */}
+      <PageTitle title={content?.data.title} />
       <RenderBuilderContent content={content} />
     </>
   );

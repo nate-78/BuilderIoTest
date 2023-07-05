@@ -125,3 +125,7 @@ a:not(.btn):not(.button):hover::after {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.content {
+  min-height: calc(100vh - 205px);
+}

@@ -1,7 +1,9 @@
 :root {
   --dark-gray: #292a36;
+  --off-white: #f5f5f5;
   --yellow: #fcba03;
   --blue: #35e3f0;
+  --red: #F15657;
   --shadow: 2px 2px 5px 1px rgba(0 0 0 / 15%);
 
   --max-width: 1100px;
@@ -116,6 +118,24 @@ a:not(.btn):not(.button)::after {
 a:not(.btn):not(.button):hover::after {
   background-color: #fcba03;
   width: 100%;
+}
+
+.btn {
+  background-color: var(--red);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  box-shadow: var(--shadow);
+  transition: transform .3s;
+  display: inline-block;
+}
+.btn-white {
+  background-color: var(--off-white);
+  color: black;
+}
+.btn:hover {
+  transform: translateY(1px);
 }
 
 img {

@@ -1,7 +1,6 @@
 import styles from './card.module.css';
 
 export default function Card(props: any) {
-  console.log(props);
   return (
     <div className={styles.card} suppressHydrationWarning={true}>
       <div className={styles.cardHeadline}>

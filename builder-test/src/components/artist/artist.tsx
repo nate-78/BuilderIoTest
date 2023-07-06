@@ -4,11 +4,11 @@ export default function Artist(props: any) {
   return (
     <div className={styles.artist} suppressHydrationWarning={true}>
       <div className={styles.artistTop}>
-        <img src={props.props.data.image} alt={props.props.data.name} />
         <div className={styles.artistName}>
           <h3>{props.props.data.name}</h3>
           <span>{props.props.data.label}</span>
         </div>
+        <img src={props.props.data.image} alt={props.props.data.name} />
       </div>
       <div className={styles.artistBottom}>
         <div className={styles.albums}>

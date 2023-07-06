@@ -6,7 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          This is the Home Page.  We're using Builder.io to help us edit the other pages.
+          This is the Home Page.  We&apos;re using Builder.io to help us edit the other pages.
         </p>
       </div>
 

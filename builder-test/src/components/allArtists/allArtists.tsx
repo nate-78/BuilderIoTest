@@ -7,7 +7,6 @@ builder.init('aec0025c19714040a9b33f7105687769');
 
 
 export default function AllArtists(props: any) {
-  console.log(props);
   // get artist data
   const hasRun = false; // tie useEffect to this to make sure it only runs once
   const [artists, setArtists] = useState<any>([]);

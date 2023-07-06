@@ -1,6 +1,7 @@
 import { builder } from "@builder.io/sdk";
 import Artist from "../artist/artist";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import styles from './allArtists.module.css';
 
 builder.init('aec0025c19714040a9b33f7105687769');
 
@@ -8,20 +9,21 @@ builder.init('aec0025c19714040a9b33f7105687769');
 export default function AllArtists(props: any) {
   console.log(props);
   // get artist data
+  const hasRun = false; // tie useEffect to this to make sure it only runs once
   const [artists, setArtists] = useState<any>([]);
-  builder.getAll("artist").then((data) => {
-    setArtists(data);
-  });
-  // const artists = await builder.getAll("artist", { prerender: false });
-  // console.log(artists);
+  
+  useEffect(() => {
+    builder.getAll("artist").then((data) => {
+      setArtists(data);
+    });
+  }, [hasRun]);
 
 
   return (
-    <div>
-      <h2>heading</h2>
+    <div className={styles.artistsGrid}>
       { artists.map((artist: any) => {
         return (
-          <div key={artist.id}>{artist.name}</div>
+          <Artist props={artist} key={artist.id} />
         )
       }) }
     </div>

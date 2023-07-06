@@ -1,0 +1,11 @@
+.artistsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+
+@media (max-width: 744px) {
+  .artistsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -14,7 +14,7 @@ Builder.registerComponent(Card, {
     { name: 'title', type: 'string', defaultValue: 'This is the card\'s headline.' },
     {
       name: 'content',
-      type: 'string',
+      type: 'richText',
       defaultValue: 'This is the card\'s body.',
     },
   ],

@@ -1,13 +1,13 @@
 import styles from './card.module.css';
 
 export default function Card(props: any) {
+  console.log(props);
   return (
-    <div className={styles.card}>
+    <div className={styles.card} suppressHydrationWarning={true}>
       <div className={styles.cardHeadline}>
         <h3>{props.title}</h3>
       </div>
-      <div className={styles.cardBody}>
-        {props.content}
+      <div className={styles.cardBody} dangerouslySetInnerHTML={{ __html: props.content }}>
       </div>
     </div>
   );

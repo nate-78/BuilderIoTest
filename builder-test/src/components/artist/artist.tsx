@@ -3,7 +3,7 @@ import styles from './artist.module.css';
 export default function Artist(props: any) {
   console.log(props.props);
   return (
-    <div className={styles.artist}>
+    <div className={styles.artist} suppressHydrationWarning={true}>
       <div className={styles.artistTop}>
         <img src={props.props.data.image} alt={props.props.data.name} />
         <div className={styles.artistName}>

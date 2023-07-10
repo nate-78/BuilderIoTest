@@ -19,7 +19,7 @@ export default function Header(props: any) {
               <Link href="/artists">Artists</Link>
             </li>
             <li>
-              <Link href="/example">Example</Link>
+              <Link href="/test-page">Test Page</Link>
             </li>
           </ul>
         </nav>
